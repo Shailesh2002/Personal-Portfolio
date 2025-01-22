@@ -65,8 +65,6 @@ Personal-Portfolio/
 - **Clean Code Structure**: Well-organized and commented code
 - **Cross-Browser Compatibility**: Works across all modern browsers
 
-``
-
 ## 📞 Contact
 
 Feel free to reach out if you have any questions or suggestions:
