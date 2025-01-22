@@ -3,124 +3,442 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shailesh R - Personal Portfolio</title>
+    <title>Shailesh R - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header class="header">
         <a href="#home" class="logo">Portfolio</a>
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" class="nav-link"><i class="ri-home-line"></i> Home</a>
+            <a href="#education" class="nav-link"><i class="ri-book-line"></i> Education</a>
+            <a href="#skills" class="nav-link"><i class="ri-tools-line"></i> Skills</a>
+            <a href="#projects" class="nav-link"><i class="ri-folder-line"></i> Projects</a>
+            <a href="#contact" class="nav-link"><i class="ri-contacts-line"></i> Contact</a>
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="ri-moon-line"></i>
+            </button>
         </nav>
     </header>
 
-    <!-- Home Section -->
-    <section id="home">
-      <marquee behavior="" direction="right">
-        <h1>Welcome to My Portfolio</h1>
-     </marquee>
-      <div class="about">
-        <h1> Hi...I'm Shailesh R,</h1>
-        <br>
-        <p>BE graduate in Electronics and Communication, passionate about full-stack development and software Development. I aim to apply my technical skills in an IT environment and Continue learning.</p>
-    </div>
-        <div class="Image-container">
-            <img src="myphoto.jpg" alt="My Image">
-        </div>
-    </section>
-
-    <!-- Education Section -->
-<section id="education">
-    <h2>Education</h2>
-    <hr class="education-line">
-    <div class="education-container">
-        <div class="education-card">
-            <h3>RNS Institute of Technology</h2>
-            <p>BE in Electronics and Communication Engineering (CGPA: 8.46)</p>
-            <p>Dec 2020 - May 2024</p>
-        </div>
-        <div class="education-card">
-            <strong>Sri Chaitanya PU College</strong>
-            <p>II PUC PCMC (84%)</p>
-            <p>Jun 2018 - Mar 2020</p>
-        </div>
-        <div class="education-card">
-            <strong>VSS International Public School</strong>
-            <p>Class 10 (86.2%)</p>
-            <p>Jun 2017 - Mar 2018</p>
-        </div>
-        </div>
-</section>
-
-<!-- Skills Section -->
-<section id="skills">
-    <h2>Skills</h2>
-    <hr class="skill-line">
-        <div class="skill-item">
-            <strong>Languages:</strong> Java, C
-        </div>
-        <div class="skill-item">
-            <strong>Web Development:</strong> HTML, CSS, JavaScript
-        </div>
-        <div class="skill-item">
-            <strong>Databases:</strong> MySQL, Oracle (SQL)
-        </div>
-        <div class="skill-item">
-            <strong>Version Control:</strong> Git, GitHub
-        </div>
-        <div class="skill-item">
-            <strong>Operating Systems:</strong> Windows, Linux
-        </div>
-        <div class="skill-item">
-            <strong>Platforms:</strong> Eclipse, Visual Studio Code
-        </div>
-</section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <hr class="project-line">
-            <div class="p1"> <strong>IOT Based Infant Care Assistance</strong> (Aug 2023 - Apr 2024)
-               <p>Developed an infant care system using IoT to monitor and alert parents about the infant's needs.</p>
-               <p>Implemented a Raspberry Pi for data storage and real-time notifications via a Telegram bot.</p>
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <div class="home-content">
+                <div class="text-content">
+                    <h1 class="title">Hi, I'm Shailesh R</h1>
+                    <h2 class="subtitle">Full Stack Developer</h2>
+                    <p class="description">I am a passionate developer with expertise in building modern web applications. I love turning complex problems into simple, beautiful, and intuitive solutions.</p>
+                </div>
+                <div class="image-container">
+                    <img src="myphoto.jpg" alt="Profile Picture" class="profile-image">
+                </div>
             </div>
-            <div class="p2"> <strong>Contactless Attendance Monitoring System</strong> (Jun 2023 - Nov 2023)
-                <p>Developed a contactless attendance system utilizing RFID technology to automate student attendance tracking. </p>
-                <p>Implemented IOT sensors to facilitate real-time data collection and monitoring of attendance status.</p>
-                <p>Created a user-friendly mobile application to provide teachers and students with instant access to attendance records.</p>
-             </div>
-             <div class="p3"> <strong>Water Level Indicator</strong> (Sep 2021 - Oct 2021)
-                <p>Designed a water level indicator system using BC547 transistor and sensors for water level monitoring</p>
-                <p>Implemented LED indicators and buzzers to alert users when water level goes high or low.</p>
-             </div>   
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <hr class="contact-line">
-        <div class="contact-list">
-          <h3 id="l1">LinkedIn: <a href="https://www.linkedin.com/in/shaileshr-sr0097/">LinkedIn</a></h3><br>
-          <h3>GitHub: <a href="https://github.com/Shailesh2002">GitHub</a></h3><br>
-          <h3>Email: <a href="mailto:shaileshr3034@gmail.com">shaileshr3034@gmail.com</a></h3><br>
-          <h3>Phone: +91-6364830097</h3><br>
-          <h3>Location: Bengaluru, India</h3>
-        </div>
-    
-    <!-- Map Section -->
-    <div class="map">
-        <h2>My Location</h2>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151454.0574705835!2d78.14725878770786!3d12.972942511855392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baeac49955928b3%3A0xf7e74cf0085efae7!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1633561541953!5m2!1sen!2sin"
-            width="50%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-    </section>
+        <!-- Education Section -->
+        <section id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="education-container">
+                <div class="education-item">
+                    <h3 class="education-title">
+                        <i class="ri-building-4-line"></i>
+                        RNS Institute of Technology
+                    </h3>
+                    <div class="education-info">
+                        Bachelor of Engineering - Electronics and Communication Engineering
+                    </div>
+                    <div class="education-score">
+                        <i class="ri-medal-line"></i>
+                        CGPA: 8.46
+                    </div>
+                    <div class="education-year">
+                        <i class="ri-calendar-line"></i>
+                        December 2020 - May 2024
+                    </div>
+                </div>
 
+                <div class="education-item">
+                    <h3 class="education-title">
+                        <i class="ri-building-2-line"></i>
+                        Sri Chaitanya PU College
+                    </h3>
+                    <div class="education-info">
+                        II PUC - PCMC
+                    </div>
+                    <div class="education-score">
+                        <i class="ri-medal-line"></i>
+                        Percentage: 84%
+                    </div>
+                    <div class="education-year">
+                        <i class="ri-calendar-line"></i>
+                        June 2018 - March 2020
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <h3 class="education-title">
+                        <i class="ri-building-line"></i>
+                        VSS International Public School
+                    </h3>
+                    <div class="education-info">
+                        Class 10
+                    </div>
+                    <div class="education-score">
+                        <i class="ri-medal-line"></i>
+                        Percentage: 86.2%
+                    </div>
+                    <div class="education-year">
+                        <i class="ri-calendar-line"></i>
+                        June 2017 - March 2018
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3><i class="ri-code-s-slash-line"></i>Languages</h3>
+                    <div class="skill-list">
+                        <div class="skill-tag">
+                            <i class="ri-code-line"></i>
+                            Java
+                        </div>
+                        <div class="skill-tag">
+                            <i class="ri-javascript-line"></i>
+                            JavaScript
+                        </div>
+                        <div class="skill-tag">
+                            <i class="ri-code-box-line"></i>
+                            C
+                        </div>
+                        <div class="skill-tag">
+                            <i class="ri-html5-line"></i>
+                            HTML
+                        </div>
+                        <div class="skill-tag">
+                            <i class="ri-css3-line"></i>
+                            CSS
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3><i class="ri-window-line"></i>Web Development</h3>
+                    <div class="skill-list">
+                        <div class="skill-tag">
+                            <i class="ri-html5-line"></i>
+                            HTML
+                        </div>
+                        <div class="skill-tag">
+                            <i class="ri-css3-line"></i>
+                            CSS
+                        </div>
+                        <div class="skill-tag">
+                            <i class="ri-bootstrap-line"></i>
+                            Bootstrap
+                        </div>
+                        <div class="skill-tag">
+                            <i class="ri-javascript-line"></i>
+                            JavaScript
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3><i class="ri-server-line"></i>Backend Technologies</h3>
+                    <div class="skill-list">
+                        <div class="skill-tag">
+                            <i class="ri-database-2-line"></i>
+                            Hibernate
+                        </div>
+                        <div class="skill-tag">
+                            <i class="ri-plug-line"></i>
+                            JDBC
+                        </div>
+                        <div class="skill-tag">
+                            <i class="ri-server-fill"></i>
+                            JEE
+                        </div>
+                        <div class="skill-tag">
+                            <i class="ri-file-code-line"></i>
+                            Servlets
+                        </div>
+                        <div class="skill-tag">
+                            <i class="ri-pages-line"></i>
+                            JSP
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3><i class="ri-database-line"></i>Databases</h3>
+                    <div class="skill-list">
+                        <div class="skill-tag">
+                            <i class="ri-database-2-line"></i>
+                            MySQL
+                        </div>
+                        <div class="skill-tag">
+                            <i class="ri-database-2-line"></i>
+                            Oracle SQL
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3><i class="ri-git-branch-line"></i>Version Control</h3>
+                    <div class="skill-list">
+                        <div class="skill-tag">
+                            <i class="ri-git-branch-line"></i>
+                            Git
+                        </div>
+                        <div class="skill-tag">
+                            <i class="ri-github-fill"></i>
+                            GitHub
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3><i class="ri-tools-line"></i>Platform/Tools</h3>
+                    <div class="skill-list">
+                        <div class="skill-tag">
+                            <i class="ri-code-box-line"></i>
+                            VSCode
+                        </div>
+                        <div class="skill-tag">
+                            <i class="ri-terminal-box-line"></i>
+                            Eclipse
+                        </div>
+                        <div class="skill-tag">
+                            <i class="ri-database-2-line"></i>
+                            MySQL Workbench
+                        </div>
+                        <div class="skill-tag">
+                            <i class="ri-windows-line"></i>
+                            Windows
+                        </div>
+                        <div class="skill-tag">
+                            <i class="ri-ubuntu-fill"></i>
+                            Linux
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-container">
+                <div class="project-item">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">
+                                <i class="ri-restaurant-line"></i>
+                                Swango: Food Delivery Web Application
+                            </h3>
+                            <div class="project-date">
+                                <i class="ri-calendar-line"></i>
+                                <span>Nov '24 - Jan '25</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Developed a responsive web app where users can browse restaurants, add items to the cart, and proceed to checkout.
+                            Implemented user authentication, payment processing, and order history management for a seamless experience.
+                        </p>
+                        <div class="project-tech">
+                            <div class="tech-tag">
+                                <i class="ri-html5-line"></i>
+                                HTML
+                            </div>
+                            <div class="tech-tag">
+                                <i class="ri-css3-line"></i>
+                                CSS
+                            </div>
+                            <div class="tech-tag">
+                                <i class="ri-javascript-line"></i>
+                                JavaScript
+                            </div>
+                            <div class="tech-tag">
+                                <i class="ri-code-line"></i>
+                                JSP
+                            </div>
+                            <div class="tech-tag">
+                                <i class="ri-code-box-line"></i>
+                                Java
+                            </div>
+                            <div class="tech-tag">
+                                <i class="ri-server-line"></i>
+                                Servlets
+                            </div>
+                            <div class="tech-tag">
+                                <i class="ri-database-2-line"></i>
+                                MySQL
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">
+                                <i class="ri-contacts-book-line"></i>
+                                Smart Contact Management System
+                            </h3>
+                            <div class="project-date">
+                                <i class="ri-calendar-line"></i>
+                                <span>Oct '24 - Dec '24</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            A web-based application that enables users to store, manage, and organize contacts, with user authentication.
+                            Integrated search and filter functionality to allow users to quickly access specific contacts.
+                        </p>
+                        <div class="project-tech">
+                            <div class="tech-tag">
+                                <i class="ri-html5-line"></i>
+                                HTML
+                            </div>
+                            <div class="tech-tag">
+                                <i class="ri-css3-line"></i>
+                                CSS
+                            </div>
+                            <div class="tech-tag">
+                                <i class="ri-javascript-line"></i>
+                                JavaScript
+                            </div>
+                            <div class="tech-tag">
+                                <i class="ri-code-line"></i>
+                                JSP
+                            </div>
+                            <div class="tech-tag">
+                                <i class="ri-code-box-line"></i>
+                                Java
+                            </div>
+                            <div class="tech-tag">
+                                <i class="ri-server-line"></i>
+                                Servlets
+                            </div>
+                            <div class="tech-tag">
+                                <i class="ri-database-2-line"></i>
+                                MySQL
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">
+                                <i class="ri-robot-line"></i>
+                                IOT-Based Infant Care Assistance
+                            </h3>
+                            <div class="project-date">
+                                <i class="ri-calendar-line"></i>
+                                <span>Aug '23 - Apr '24</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Developed an infant care assistance system using IOT technology to monitor and alert parents about their infant needs.
+                            Implemented a Raspberry pi for data storage and real time notifications through telegram bot.
+                        </p>
+                        <div class="project-tech">
+                            <div class="tech-tag">
+                                <i class="ri-code-box-line"></i>
+                                IoT
+                            </div>
+                            <div class="tech-tag">
+                                <i class="ri-raspberry-pi-line"></i>
+                                Raspberry Pi
+                            </div>
+                            <div class="tech-tag">
+                                <i class="ri-telegram-line"></i>
+                                Telegram Bot
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="ri-linkedin-box-fill"></i>
+                    </div>
+                    <h3 class="contact-title">LinkedIn</h3>
+                    <div class="contact-info">
+                        <a href="https://www.linkedin.com/in/shaileshr-sr0097" target="_blank">
+                            Shailesh R
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="ri-github-fill"></i>
+                    </div>
+                    <h3 class="contact-title">GitHub</h3>
+                    <div class="contact-info">
+                        <a href="https://github.com/Shailesh2002" target="_blank">
+                            Shailesh2002
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="ri-mail-line"></i>
+                    </div>
+                    <h3 class="contact-title">Email</h3>
+                    <div class="contact-info">
+                        <a href="mailto:shaileshr3034@gmail.com">
+                            shaileshr3034@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="ri-phone-line"></i>
+                    </div>
+                    <h3 class="contact-title">Phone</h3>
+                    <div class="contact-info">
+                        <a href="tel:+916364830097">
+                            +91 6364830097
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="ri-map-pin-line"></i>
+                    </div>
+                    <h3 class="contact-title">Location</h3>
+                    <div class="contact-info">
+                        Bengaluru, Karnataka
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button class="scroll-to-top" aria-label="Scroll to top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
